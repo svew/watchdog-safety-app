@@ -1,4 +1,4 @@
-package com.sac.speechdemo;
+package com.sac.watchdog;
 
 import android.content.ComponentName;
 import android.content.Intent;

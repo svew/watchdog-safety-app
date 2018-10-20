@@ -1,4 +1,4 @@
-package com.sac.speechdemo;
+package com.sac.watchdog;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
