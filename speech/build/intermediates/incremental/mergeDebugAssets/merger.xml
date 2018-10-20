@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/speech/src/main/assets"/><source path="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/speech/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/speech/src/debug/assets"/></dataSet></merger>
