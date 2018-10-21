@@ -20,19 +20,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/LocationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_alert.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_alert.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_location.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,8 +86,8 @@
       <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="413">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+            <state relative-caret-position="142">
+              <caret line="176" selection-start-line="176" selection-end-line="176" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,15 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LocationActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-              <folding>
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="37" selection-start-line="37" selection-end-line="43" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -133,8 +119,8 @@
       <file leaf-file-name="MyService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="4050">
+              <caret line="225" column="49" selection-start-line="225" selection-start-column="49" selection-end-line="225" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -3208,9 +3194,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/LocationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sac/speechdemo/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MyService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MotionSensorService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java" />
       </list>
     </option>
   </component>
@@ -3257,7 +3244,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DEBUGGABLE_DEVICE" value="google-pixel_xl-HT7580200627" />
-    <property name="DEBUGGABLE_PROCESS" value="com.example.user.speechrecognizationasservice" />
+    <property name="DEBUGGABLE_PROCESS" value="hackisu.fall2019.watchdog" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.project.structure.last.selected" value="app" />
@@ -3446,24 +3433,6 @@
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MotionSensorService.java</url>
           <line>37</line>
           <properties />
@@ -3494,17 +3463,35 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
         <watch expression="mLinearAccelerometer" language="JAVA" />
         <watch expression="mSensorManager" language="JAVA" />
       </configuration>
+      <configuration name="Remote">
+        <watch expression="contactNumber!=null" language="JAVA" />
+      </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>contactNumber!=null</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>contactNumber</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>contactNumber != null</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>mSensorManager</expression-string>
         <language-id>JAVA</language-id>
@@ -3569,16 +3556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -3593,21 +3570,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="413">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3616,11 +3582,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+        <state relative-caret-position="142">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/MyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4050">
+          <caret line="225" column="49" selection-start-line="225" selection-start-column="49" selection-end-line="225" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/sac/watchdog/LocationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="37" selection-start-line="37" selection-end-line="43" selection-end-column="19" />
         </state>
       </provider>
     </entry>

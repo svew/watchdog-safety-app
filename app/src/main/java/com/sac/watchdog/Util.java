@@ -23,10 +23,11 @@ public class Util {
     public static void notifyEmergencyContacts(Context context, String givenMessage) {
         List<String> contactNumbers = readFromFile(context);
 
-        if (contactNumbers != null && !contactNumbers.isEmpty())
-            for (String contactNumber : contactNumbers) {
+        for (String contactNumber : contactNumbers) {
+            if (contactNumber != null) {
                 sendSms(contactNumber, givenMessage);
             }
+        }
     }
 
     private static List<String> readFromFile(Context context) {
