@@ -74,14 +74,15 @@ public class MainActivity extends AppCompatActivity {
     void requestLocation() {
 
         // Location permission check
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
-            // Request permission
-            requestPermissions(new String[] { Manifest.permission.ACCESS_COARSE_LOCATION }, 10);
+            // Request permissions
+            requestPermissions(new String[] { Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 10);
             return;
         }
 
-        location_manager.requestLocationUpdates("gps", 5000, 0, location_listener);
+        location_manager.requestLocationUpdates("gps", 500, 0, location_listener);
     }
 
     protected void onDestroy() {
