@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        startService(new Intent(MainActivity.this, Alarm.class));
+
         location_manager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
         location_listener = new LocationListener() {
@@ -80,5 +82,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         location_manager.requestLocationUpdates("gps", 5000, 0, location_listener);
+    }
+
+    protected void onDestroy() {
+        stopService(new Intent(MainActivity.this, Alarm.class));
+        super.onDestroy();
     }
 }
