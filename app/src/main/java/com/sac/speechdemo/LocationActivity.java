@@ -1,5 +1,6 @@
 package com.sac.speechdemo;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -28,7 +29,10 @@ public class LocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
 
-//        startService(new Intent(LocationActivity.this, Alarm.class));
+        MediaPlayer mpintro = MediaPlayer.create(this, R.raw.police);
+        mpintro.setLooping(true);
+        mpintro.start();
+
 
         location_manager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -41,7 +45,7 @@ public class LocationActivity extends AppCompatActivity {
                 if (location.getAccuracy() < 25) {
                     link += location.getLatitude() + "," + location.getLongitude();
                     // Send sms here
-                    Util.notifyEmergencyContacts(link);
+                    Util.notifyEmergencyContacts(getBaseContext(), link);
                     location_manager.removeUpdates(location_listener);
                 }
             }
