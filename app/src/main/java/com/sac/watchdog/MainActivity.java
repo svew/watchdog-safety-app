@@ -1,4 +1,4 @@
-package com.sac.speechdemo;
+package com.sac.watchdog;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -74,10 +74,12 @@ public class MainActivity extends AppCompatActivity {
         btStartService.setOnClickListener(v -> {
             if (btStartService.getText().toString().equalsIgnoreCase(getString(R.string.start_service))) {
                 startService(new Intent(MainActivity.this, MyService.class));
+                startService(new Intent(MainActivity.this, MotionSensorService.class));
                 btStartService.setText(getString(R.string.stop_service));
                 tvText.setVisibility(View.VISIBLE);
             } else {
                 stopService(new Intent(MainActivity.this, MyService.class));
+                stopService(new Intent(MainActivity.this, MotionSensorService.class));
                 btStartService.setText(getString(R.string.start_service));
                 tvText.setVisibility(View.GONE);
             }

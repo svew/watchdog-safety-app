@@ -1,4 +1,4 @@
-package com.sac.speechdemo;
+package com.sac.watchdog;
 
 import android.Manifest.permission;
 import android.app.AlarmManager;
@@ -6,6 +6,10 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.media.AudioManager;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
@@ -21,17 +25,45 @@ import com.sac.speech.SpeechDelegate;
 import com.sac.speech.SpeechRecognitionNotAvailable;
 import com.tbruyelle.rxpermissions.RxPermissions;
 
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
-public class MyService extends Service implements SpeechDelegate, Speech.stopDueToDelay {
+public class MyService extends Service implements SpeechDelegate, Speech.stopDueToDelay, SensorEventListener {
 
     public static SpeechDelegate delegate;
     private boolean isServiceOn;
 
+    /**
+     * The maximum scalar acceleration needed to trigger a fall event
+     */
+    public static final float FALL_ACCELERATION_THRESHOLD = 15f;
+    /**
+     * Fall events wont occur faster than FALL_EVENT_DEBOUNCE_TIME seconds apart.
+     */
+    public static final float FALL_EVENT_DEBOUNCE_TIME = 3;
+
+    private SensorManager mSensorManager;
+    private Sensor mLinearAccelerometer;
+
+    /**
+     * The timestamp when the last fall event occured
+     */
+    private long timeCounter;
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        //Sensor stuff
+        Context context = getApplicationContext();
+        mSensorManager = (SensorManager) context.getSystemService(context.SENSOR_SERVICE);
+        mLinearAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
+        timeCounter = 0;
+        mSensorManager.registerListener(this, mLinearAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+
+
         //TODO do something useful
         isServiceOn = true;
         try {
@@ -161,7 +193,7 @@ public class MyService extends Service implements SpeechDelegate, Speech.stopDue
     @Override
     public void onTaskRemoved(Intent rootIntent) {
         //Restarting the service if it is removed.
-        if(isServiceOn){
+        if (isServiceOn) {
             PendingIntent service =
                     PendingIntent.getService(getApplicationContext(), new Random().nextInt(),
                             new Intent(getApplicationContext(), MyService.class), PendingIntent.FLAG_ONE_SHOT);
@@ -174,5 +206,33 @@ public class MyService extends Service implements SpeechDelegate, Speech.stopDue
     }
 
 
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+        if (timeCounter != 0)
+            if (System.nanoTime() < timeCounter + FALL_EVENT_DEBOUNCE_TIME * 1e9)
+                return;
 
+        timeCounter = 0;
+
+        float x = Math.abs(sensorEvent.values[0]);
+        float y = Math.abs(sensorEvent.values[1]);
+        float z = Math.abs(sensorEvent.values[2]);
+
+        float scalarAcceleration = (float) Math.sqrt(x * x + y * y + z * z);
+
+        //A fall event occurs!
+        if (scalarAcceleration > FALL_ACCELERATION_THRESHOLD) {
+            Toast.makeText(getBaseContext(), "Sending Location!", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, LocationActivity.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            stopSelf();
+            getApplication().startActivity(i);
+            timeCounter = System.nanoTime();
+            isServiceOn = false;
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+    }
 }

@@ -1,4 +1,4 @@
-package com.sac.speechdemo;
+package com.sac.watchdog;
 
 import android.content.Context;
 import android.telephony.SmsManager;
@@ -20,39 +20,40 @@ public class Util {
         SmsManager.getDefault().sendTextMessage(phoneNumber, null, message, null, null);
     }
 
-    public static void notifyEmergencyContacts(Context context, String givenMessage){
+    public static void notifyEmergencyContacts(Context context, String givenMessage) {
         List<String> contactNumbers = readFromFile(context);
 
-        for(String contactNumber:contactNumbers){
-            sendSms(contactNumber, givenMessage);
-        }
+        if (contactNumbers != null && !contactNumbers.isEmpty())
+            for (String contactNumber : contactNumbers) {
+                sendSms(contactNumber, givenMessage);
+            }
     }
 
     private static List<String> readFromFile(Context context) {
 
         String ret = "";
         Gson gson = new Gson();
-        Type type = new TypeToken<List<String>>(){}.getType();
+        Type type = new TypeToken<List<String>>() {
+        }.getType();
 
 
         try {
             InputStream inputStream = context.openFileInput("config.txt");
 
-            if ( inputStream != null ) {
+            if (inputStream != null) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                 String receiveString = "";
                 StringBuilder stringBuilder = new StringBuilder();
 
-                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                while ((receiveString = bufferedReader.readLine()) != null) {
                     stringBuilder.append(receiveString);
                 }
 
                 inputStream.close();
                 ret = stringBuilder.toString();
             }
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             Log.e("login activity", "File not found: " + e.toString());
         } catch (IOException e) {
             Log.e("login activity", "Can not read file: " + e.toString());
