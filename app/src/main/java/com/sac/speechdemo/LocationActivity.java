@@ -1,5 +1,7 @@
 package com.sac.speechdemo;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +16,8 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.user.speechrecognizationasservice.R;
 
@@ -29,9 +33,24 @@ public class LocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
 
+        AudioManager am =
+                (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+
+        am.setStreamVolume(
+                AudioManager.STREAM_MUSIC,
+                am.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
+                0);
+
         MediaPlayer mpintro = MediaPlayer.create(this, R.raw.police);
         mpintro.setLooping(true);
         mpintro.start();
+
+        ((Button)findViewById(R.id.stopButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mpintro.stop();
+            }
+        });
 
 
         location_manager = (LocationManager) getSystemService(LOCATION_SERVICE);

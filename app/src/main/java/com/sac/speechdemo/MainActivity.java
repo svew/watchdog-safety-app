@@ -160,7 +160,8 @@ public class MainActivity extends AppCompatActivity {
                 // Set the value to the textviews
                 textViews[arrIndex*2].setText("Contact Name : ".concat(contactName));
                 textViews[arrIndex*2+1].setText("Contact Number : ".concat(contactNumber));
-                phoneNumbers[arrIndex] = (contactNumber);
+                phoneNumbers[arrIndex] = (contactNumber).replaceAll("\\D+","");
+                ;
 
             } catch (Exception e) {
                 e.printStackTrace();

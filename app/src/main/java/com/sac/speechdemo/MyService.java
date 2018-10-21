@@ -28,10 +28,12 @@ import java.util.Random;
 public class MyService extends Service implements SpeechDelegate, Speech.stopDueToDelay {
 
     public static SpeechDelegate delegate;
+    private boolean isServiceOn;
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         //TODO do something useful
+        isServiceOn = true;
         try {
             if (VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
                 ((AudioManager) Objects.requireNonNull(
@@ -102,6 +104,7 @@ public class MyService extends Service implements SpeechDelegate, Speech.stopDue
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 stopSelf();
                 getApplication().startActivity(i);
+                isServiceOn = false;
             } else {
                 Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
             }
@@ -158,14 +161,18 @@ public class MyService extends Service implements SpeechDelegate, Speech.stopDue
     @Override
     public void onTaskRemoved(Intent rootIntent) {
         //Restarting the service if it is removed.
-        PendingIntent service =
-                PendingIntent.getService(getApplicationContext(), new Random().nextInt(),
-                        new Intent(getApplicationContext(), MyService.class), PendingIntent.FLAG_ONE_SHOT);
+        if(isServiceOn){
+            PendingIntent service =
+                    PendingIntent.getService(getApplicationContext(), new Random().nextInt(),
+                            new Intent(getApplicationContext(), MyService.class), PendingIntent.FLAG_ONE_SHOT);
 
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        assert alarmManager != null;
-        alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, 1000, service);
+            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            assert alarmManager != null;
+            alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, 1000, service);
+        }
         super.onTaskRemoved(rootIntent);
     }
+
+
 
 }
