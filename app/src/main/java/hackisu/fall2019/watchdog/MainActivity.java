@@ -57,21 +57,21 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        configure_button();
+        requestLocation();
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case 10:
-                configure_button();
+                requestLocation();
                 break;
             default:
                 break;
         }
     }
 
-    void configure_button(){
+    void requestLocation() {
 
         // Location permission check
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
