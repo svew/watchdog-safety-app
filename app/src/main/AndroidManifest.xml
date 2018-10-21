@@ -20,10 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.sac.speechdemo.LocationActivity"></activity>
 
         <service android:name="com.sac.speechdemo.MyService"></service>
 
-        <activity android:name="com.sac.speechdemo.alertActivity"></activity>
     </application>
 
 </manifest>
