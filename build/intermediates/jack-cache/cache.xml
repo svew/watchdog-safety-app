@@ -2,130 +2,124 @@
 <items version="2" >
 
     <item
-        jar="/home/amontoya/Android/Sdk/platforms/android-25/android.jar"
+        jar="/home/amontoya/.android/build-cache/b24d1e3890a3697e2b40ac6fb8b4c69a4c218ddb/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="712a0312fe844a21a1b3812fa960c363a1578984">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackRuntimeLibraries/release/jars/8000/40/android-19b00eedaf6061d6385dc4498f2427e0b84245ef.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/ae3911c8f2eb9f1e91a8ea9451ed190fea4c31c9/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="b43cbd5115bd64d3446584fa0da60fca063914c5">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-3a193c46859e65fd40416084586611e37fa636d7.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/fa6db4d223a2d5061ca702aeb06041b71babc19a/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="a846ddbf5bf88dee5f89d4dffe22c864f576d9b0">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-7206e5043886b6bc8660b158ac542fb944e16ee0.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/f78c058cd84ac6121c3aab4b8c202e4aabe2bf21/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-d76cb29075a61e5cecb41cc9b2db3b25d9ceb92f.jar" />
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-10f8935444ab40f7c8058675b2dca0b5d93f1c26.jar" />
     </item>
     <item
         jar="/home/amontoya/.android/build-cache/4ed4428bdbaf0d080bd147aea9767425bc2dd712/output/jars/classes.jar"
         revision="25.0.3"
         sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-049d30985fe72f5c6fc6d37f60c2c3dbb8eb58b5.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/b24d1e3890a3697e2b40ac6fb8b4c69a4c218ddb/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-10f8935444ab40f7c8058675b2dca0b5d93f1c26.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/a1bf1b7c8df51b0a34439fcf5e8c8d0bf1feb7ea/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-e1581468b64399a890ddbec93b6b5dda0d4fd37a.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/4f146eac03600c09f18a2e7a96f886f04f3cc426/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-61eacb8c863d7222fc8e3447943819c5f725e55c.jar" />
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-049d30985fe72f5c6fc6d37f60c2c3dbb8eb58b5.jar" />
     </item>
     <item
         jar="/home/amontoya/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.6/2586312cd2b8a511e4c6236736f5a039fc0f2273/rxjava-1.1.6.jar"
         revision="25.0.3"
         sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/rxjava-1.1.6-160865cc86f39d8d99d8bfb3199df05faf05a7bc.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/beed27a7915e935397f6fb571606242b7a62ee2a/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-6b0c1eace45cc937f69c911c6aadd7496f415914.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/927be9afbf1d05fefc5cde26a41ce00853eb0fc9/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-5c3f7128b72b68769fe3ce60f325fce35dfb3611.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/e07ddb1eba47afade768a304bb4c1358a4e3cd42/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="50fd38504119ea609c269abf98af75fb14e82f2c">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-9fe955643c0690573a984412d0af10e2bf7c0d47.jar" />
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/rxjava-1.1.6-160865cc86f39d8d99d8bfb3199df05faf05a7bc.jar" />
     </item>
     <item
         jar="/home/amontoya/.android/build-cache/348d06a564361528e66956c519826c317c37b49e/output/jars/classes.jar"
         revision="25.0.3"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-c0b528a6634e86ce19d21fb874f962d1cad3c92a.jar" />
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-c0b528a6634e86ce19d21fb874f962d1cad3c92a.jar" />
     </item>
     <item
-        jar="/home/amontoya/.android/build-cache/2e4379b6607dee1b1d93f9400247d6cf62e011d5/output/jars/classes.jar"
+        jar="/home/amontoya/.android/build-cache/a1bf1b7c8df51b0a34439fcf5e8c8d0bf1feb7ea/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-0e3abde02a60801d3c9bcb79cd7d0f530191c283.jar" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-e1581468b64399a890ddbec93b6b5dda0d4fd37a.jar" />
     </item>
     <item
-        jar="/home/amontoya/.android/build-cache/860e7d781fe1cdbd172e52453de08099bb8b94a5/output/jars/classes.jar"
+        jar="/home/amontoya/.android/build-cache/fa6db4d223a2d5061ca702aeb06041b71babc19a/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-3b2dedfb2eb7889c3a7a06dc99d25279f9a275e6.jar" />
+        sha1="a846ddbf5bf88dee5f89d4dffe22c864f576d9b0">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-7206e5043886b6bc8660b158ac542fb944e16ee0.jar" />
     </item>
     <item
-        jar="/home/amontoya/.android/build-cache/43b6b2a510e646c2cc4507d48d0b75529e3908cb/output/jars/classes.jar"
+        jar="/home/amontoya/.android/build-cache/f78c058cd84ac6121c3aab4b8c202e4aabe2bf21/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-2fae2af4e5a4fff58391f4a3605ccc1734d8bca0.jar" />
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-d76cb29075a61e5cecb41cc9b2db3b25d9ceb92f.jar" />
     </item>
     <item
-        jar="/home/amontoya/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jar="/home/amontoya/.android/build-cache/ae3911c8f2eb9f1e91a8ea9451ed190fea4c31c9/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/constraint-layout-solver-1.0.2-0527f932438e7838ebbb1cd6fe9a10be72978af2.jar" />
-    </item>
-    <item
-        jar="/home/amontoya/.android/build-cache/78fb039754a46c96bd321af0cc324b8659f7b712/output/jars/classes.jar"
-        revision="25.0.3"
-        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-07e5554f0ba776ac082073e5d7a5df6a794a9c81.jar" />
+        sha1="b43cbd5115bd64d3446584fa0da60fca063914c5">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-3a193c46859e65fd40416084586611e37fa636d7.jar" />
     </item>
     <item
         jar="/home/amontoya/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
         revision="25.0.3"
         sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/support-annotations-25.3.0-ba8989a0a333c95a8a0687c9a5be62e240ac1807.jar" />
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/support-annotations-25.3.0-ba8989a0a333c95a8a0687c9a5be62e240ac1807.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/speech/build/intermediates/bundles/default/classes.jar"
+        revision="25.0.3"
+        sha1="d1a01305ab78bdcf6515c2e557ee882fd4b26bae">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-abde679d00e92347a1e11ecee1bc472ef922bf8e.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/860e7d781fe1cdbd172e52453de08099bb8b94a5/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-3b2dedfb2eb7889c3a7a06dc99d25279f9a275e6.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/78fb039754a46c96bd321af0cc324b8659f7b712/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-07e5554f0ba776ac082073e5d7a5df6a794a9c81.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/constraint-layout-solver-1.0.2-0527f932438e7838ebbb1cd6fe9a10be72978af2.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/927be9afbf1d05fefc5cde26a41ce00853eb0fc9/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-5c3f7128b72b68769fe3ce60f325fce35dfb3611.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/e07ddb1eba47afade768a304bb4c1358a4e3cd42/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="50fd38504119ea609c269abf98af75fb14e82f2c">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-9fe955643c0690573a984412d0af10e2bf7c0d47.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/2e4379b6607dee1b1d93f9400247d6cf62e011d5/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-0e3abde02a60801d3c9bcb79cd7d0f530191c283.jar" />
     </item>
     <item
         jar="/home/amontoya/.android/build-cache/783ed6efe21b33995a4afc84d12139d26e1bbb2f/output/jars/classes.jar"
         revision="25.0.3"
         sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/release/jars/8000/1f/classes-555b865e9384359efcb2c1994cb990480443a46b.jar" />
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-555b865e9384359efcb2c1994cb990480443a46b.jar" />
     </item>
     <item
-        jar="/home/amontoya/Android/Sdk/platforms/android-25/optional/org.apache.http.legacy.jar"
+        jar="/home/amontoya/.android/build-cache/4f146eac03600c09f18a2e7a96f886f04f3cc426/output/jars/classes.jar"
         revision="25.0.3"
-        sha1="5f0541a4298daa0590b22cfbde43f85e2a675545">
-        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackRuntimeLibraries/release/jars/8000/40/org.apache.http.legacy-d59d8232032af14d7c299b2c068b8b274769dfb7.jar" />
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-61eacb8c863d7222fc8e3447943819c5f725e55c.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/beed27a7915e935397f6fb571606242b7a62ee2a/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-6b0c1eace45cc937f69c911c6aadd7496f415914.jar" />
+    </item>
+    <item
+        jar="/home/amontoya/.android/build-cache/43b6b2a510e646c2cc4507d48d0b75529e3908cb/output/jars/classes.jar"
+        revision="25.0.3"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="/home/amontoya/School/Fall-18/General/hackisu-FA18/Speech-Recognizer/app/build/intermediates/transforms/preJackPackagedLibraries/debug/jars/8000/1f/classes-2fae2af4e5a4fff58391f4a3605ccc1734d8bca0.jar" />
     </item>
 
 </items>

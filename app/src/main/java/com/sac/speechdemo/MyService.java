@@ -96,7 +96,15 @@ public class MyService extends Service implements SpeechDelegate, Speech.stopDue
     public void onSpeechResult(String result) {
         Log.d("Result", result + "");
         if (!TextUtils.isEmpty(result)) {
-            Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+            if (result.contains("help")) {
+//                Util.notifyEmergencyContacts(result);
+                Toast.makeText(getBaseContext(), "Sending Location!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getBaseContext(), alertActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getApplication().startActivity(i);
+            } else {
+                Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
