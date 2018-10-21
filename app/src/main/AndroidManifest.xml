@@ -3,6 +3,9 @@
     package="hackisu.fall2019.watchdog">
     <uses-permission android:name="android.permission.SEND_SMS"/>
 
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- OR - depends on the requiremnts-->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 
     <application
         android:allowBackup="true"
