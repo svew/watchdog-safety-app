@@ -13,31 +13,34 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.widget.TextView;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
-    private LocationManager locationManager;
-    private LocationListener listener;
+    private LocationManager location_manager;
+    private LocationListener location_listener;
 
     private String link = "https://maps.google.com/?q=";
-
-    private TextView t;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        t = (TextView) findViewById(R.id.textView);
+        location_manager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
-        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-
-        listener = new LocationListener() {
+        location_listener = new LocationListener() {
 
             @Override
             public void onLocationChanged(Location location) {
-                link += location.getLatitude() + "," + location.getLongitude();
+
+                // Ensure the location is accurate
+                if (location.getAccuracy() < 25) {
+                    link += location.getLatitude() + "," + location.getLongitude();
+                    // Send sms here
+                    
+                    location_manager.removeUpdates(location_listener);
+                }
             }
 
             @Override
@@ -77,6 +80,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        locationManager.requestLocationUpdates("gps", 5000, 0, listener);
+        location_manager.requestLocationUpdates("gps", 5000, 0, location_listener);
     }
 }
