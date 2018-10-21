@@ -13,7 +13,6 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 if (location.getAccuracy() < 25) {
                     link += location.getLatitude() + "," + location.getLongitude();
                     // Send sms here
-                    
+
                     location_manager.removeUpdates(location_listener);
                 }
             }
